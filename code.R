@@ -34,7 +34,7 @@ docs <- tm_map(docs, stripWhitespace)
 docs <- tm_map(docs,stemDocument)
 #writeLines(as.character(docs[[30]]))
 #end of preprocessing
-docs <- tm_map(docs, removeWords, c('â???','â???¦','â','???¦','???','???"',"ie"))
+docs <- tm_map(docs, removeWords, c('Ã¢???','Ã¢???Â¦','Ã¢','???Â¦','???','???"',"ie"))
 
 
 #Create document-term matrix
